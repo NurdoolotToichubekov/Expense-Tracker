@@ -17,7 +17,7 @@ public class UserInterface {
             System.out.println("4. Exit");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1 -> addExpense();
@@ -40,7 +40,7 @@ public class UserInterface {
         double amount = scanner.nextDouble();
 
         System.out.print("Enter date (yyyy-mm-dd): ");
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
         String date = scanner.nextLine();
 
         expenseManager.addExpense(new Expense(category, amount, date));
